@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Belwe-Medium;
+    src: url(../fonts/Belwe-Medium.woff);
+}
+
+
+body {
+  padding-top: 54px;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+
+
+
+body {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Belwe-Medium;
+  font-size: 16px;
+}
+
+.card_sets #classic, #oldgods, #ungoro, #koft , #meanstreets{
+  border-style: solid;
+  border-width: 5px;
+}
+
+
+.card_info {
+  display: none;
+}
+
+.parchment {
+  background-color: #e1d7bd;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+}
+
+
+#search_field {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search_wrapper {
+  margin-left: 35%;
+}
+
+#search_field{
+    float: left;
+}
+
+.card_sets {
+  background-color: #e1d7bd;
+}
+
+
+.cardlist li {
+  display: inline;
+}
+
+.cardlist img {
+  height: 46px;
+  width: 30px;
+}
+
+.cardlist img:hover {
+  box-shadow: inset 0 0 1em white, 0 0 1em white;
+}
+
+/*
+ height: 465px;
+ width: 307px;
+*/
+
+
+
+#custom-search-form {
+    margin:0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+#custom-search-form .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#custom-search-form button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.search-query:focus + button {
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
